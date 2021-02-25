@@ -9,5 +9,5 @@ class Profile(models.Model):
 	created = models.DateTimeField("作成日", default=timezone.now)
 
 	def __str__(self):
-		return self.author
+		return str(self.author)
         
