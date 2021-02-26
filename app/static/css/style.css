@@ -5,11 +5,11 @@
 }
 
 body {
-  background: #fff;
+  background-color: rgb(241, 241, 241);
   display: flex;
   flex-flow: column;
   min-height: 100vh;
-  font-family: 'Yusei Magic', sans-serif;
+  font-family: 'M PLUS 1p', sans-serif;
 }
 
 main {
@@ -17,16 +17,13 @@ main {
 }
 
 .navbar {
-  font-family: 'Kaushan Script', cursive;
-  background-color: #6b809c;
+  font-family: 'Lobster Two', cursive;
+  background-color: #4d77ad;
 }
 
 .navbar-brand {
   color: #fff;
-}
-
-.jumbotron {
-  height: 75vh;
+  font-size: 28px;
 }
 
 .card {
@@ -40,7 +37,24 @@ main {
 }
 
 footer {
-  height: 8vh;
+  font-family: 'Lobster Two', cursive;
+  height: 6vh;
   color: #ffffff;
-  background-color: #6b809c;
+  background-color: #4d77ad;
 }
+
+/* --------------- color --------------- */
+
+.rb-top {
+  border-radius: 3px 3px 0 0;
+}
+
+.rb {
+  border-radius: 3px;
+}
+
+/* --------------- color --------------- */
+.w-blue {
+  background-color: #4d77ad;
+}
+

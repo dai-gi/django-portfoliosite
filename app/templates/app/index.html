@@ -2,12 +2,12 @@
 
 {% block header %}
 <nav class="navbar justify-content-center">
-  <a class="navbar-brand" href="#">Django_Portfolio</a>
+  <h3 class="navbar-brand" href="#">Django portfolio</h3>
 </nav>
 {% endblock %}
 
 {% block content %}
-<div class="col-8 shadow-sm items p-0 m-2">
+<div class="col-7 shadow-sm items p-0 mx-2 my-5 bg-white border border-0 rb">
   <section>
     <div class="container">
       <h1 class="m-5">Portfolio</h1>
@@ -23,39 +23,41 @@
     </div>
   </section>
 </div>
-<div class="col-3 p-0 shadow-sm m-2 align-self-start">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <nav class="nav flex-column">
-          <h1 class="mt-5 mb-3">Navigation</h1>
-          <h4>
-            <a class="nav-link p-0 my-3 text-black-50" href="#">/</a>
-          </h4>
-          <h3 class="my-3">
-            <a class="text-dark" href="#">LOGIN</a>
-          </h3>
-          <h3 class="mt-3 mb-5">
-            <a class="text-dark" href="/">POST</a>
-          </h3>
-        </nav>
+<div class="col-4 mx-2 my-5 ">
+  <div class="col-12 p-0 shadow-sm align-self-start bg-white border border-0 rb">
+    <h4 class="p-2 w-blue text-white rb-top">ナビゲーション</h4>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="nav flex-column">
+            <h4>
+              <a class="nav-link p-0 my-3 text-black-50" href="#">/</a>
+            </h4>
+            <h3 class="my-3">
+              <a class="text-dark" href="#">LOGIN</a>
+            </h3>
+            <h3 class="mt-3 mb-5">
+              <a class="text-dark" href="/">POST</a>
+            </h3>
+          </nav>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class="col-3 p-0 shadow-sm m-2 align-self-start">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <nav class="flex-column">
-          <h1 class="mt-5 mb-3">Profile</h1>
-          {% for profile in profile_data %}
-          <div class="ml-5 align-self-center">
-            <h4>{{ profile.author }}</h4>
-            <p>{{ profile.content }}</p>
-          </div>
-          {% endfor %}
-        </nav>
+  <div class="col-12 p-0 shadow-sm my-5 align-self-start bg-white border border-0 rb">
+    <h4 class="p-2 w-blue text-white rb-top">プロフィール</h4>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="flex-column">
+            {% for profile in profile_data %}
+            <div class="ml-5 align-self-center">
+              <h4>{{ profile.author }}</h4>
+              <p>{{ profile.content }}</p>
+            </div>
+            {% endfor %}
+          </nav>
+        </div>
       </div>
     </div>
   </div>
