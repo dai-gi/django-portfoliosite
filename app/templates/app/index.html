@@ -57,17 +57,22 @@
     <div class="col-12 my-5">
       <div class="row d-flex justify-content-center">
         <div class="col-9 mb-4">
-          <h5 class="mb-0">経歴</h5>
-          <hr class="hr mb-2 mt-0">
-          <p>大学卒業後...</p>
-          <p>◯◯◯◯ 株式会社に入社...</p>
-          <p>◯◯◯◯ 株式会社に転職...</p>
-          <p>現在はエンジニアを目指して、プログラミングの勉強をしています。</p>
+          {% if profile.career %}
+            <h5 class="mb-0">経歴</h5>
+            <hr class="hr mb-2 mt-0">
+            <p>{{ profile.career }}</p>
+          {% else %}
+            <p>投稿はありません。</p>
+          {% endif %}
         </div>
         <div class="col-9">
-          <h5 class="mb-0">学習言語</h5>
-          <hr class="hr mb-2 mt-0">
-          <p>Django、Python、HTML/CSS、Bootstrap4</p>
+          {% if profile.programming_language %}
+            <h5 class="mb-0">学習言語</h5>
+            <hr class="hr mb-2 mt-0">
+            <p>{{ profile.programming_language }}</p>
+          {% else %}
+            <p>投稿はありません。</p>
+          {% endif %}
         </div>
         {% endfor %}
       </div>
