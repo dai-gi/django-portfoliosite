@@ -37,7 +37,11 @@
     </div>
     {% for profile in profile_data %}
     <div class="col-12 text-center my-5">
-      <img class="rounded-circle profile-img" src="../static/img/user.png" alt="プロフィール画像">
+      {% if profile.image %}
+        <img class="rounded-circle profile-img" src="{{ profile.image.url }}" alt="プロフィール画像">
+      {% else %}
+        <img class="rounded-circle profile-img" src="../static/img/user.png" alt="プロフィール画像">
+      {% endif %}
       <h5 class="my-3">{{ profile.author }}</h5>
       <div class="col-12 sns-content d-flex flex-row justify-content-center align-items-center">
         <div class="mr-4 twitter rounded-circle d-flex align-items-center justify-content-center">
@@ -58,20 +62,20 @@
       <div class="row d-flex justify-content-center">
         <div class="col-9 mb-4">
           {% if profile.career %}
-            <h5 class="mb-0">経歴</h5>
-            <hr class="hr mb-2 mt-0">
-            <p>{{ profile.career }}</p>
+          <h5 class="mb-0">経歴</h5>
+          <hr class="hr mb-2 mt-0">
+          <p>{{ profile.career }}</p>
           {% else %}
-            <p>投稿はありません。</p>
+          <p>投稿はありません。</p>
           {% endif %}
         </div>
         <div class="col-9">
           {% if profile.programming_language %}
-            <h5 class="mb-0">学習言語</h5>
-            <hr class="hr mb-2 mt-0">
-            <p>{{ profile.programming_language }}</p>
+          <h5 class="mb-0">学習言語</h5>
+          <hr class="hr mb-2 mt-0">
+          <p>{{ profile.programming_language }}</p>
           {% else %}
-            <p>投稿はありません。</p>
+          <p>投稿はありません。</p>
           {% endif %}
         </div>
         {% endfor %}
@@ -120,7 +124,11 @@
       <div class="row">
         {% for profile in profile_data %}
         <div class="col-12 text-center mt-3 mb-1">
-          <img class="rounded-circle profile-img" src="../static/img/user.png" alt="プロフィール画像">
+          {% if profile.image %}
+            <img class="rounded-circle profile-img" src="{{ profile.image.url }}" alt="プロフィール画像">
+          {% else %}
+            <img class="rounded-circle profile-img" src="../static/img/user.png" alt="プロフィール画像">
+          {% endif %}
           <h5 class="my-3">{{ profile.author }}</h5>
         </div>
         <div class="col-12">
