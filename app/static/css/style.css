@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(241, 241, 241);
+  background-color: #f5f5f5;
   display: flex;
   flex-flow: column;
   min-height: 100vh;
@@ -22,7 +22,7 @@ main {
 }
 
 .navbar-brand {
-  color: #fff;
+  color: #ffffff;
   font-size: 28px;
 }
 
@@ -35,14 +35,38 @@ footer {
 
 /* --------------- button --------------- */
 
-.btns {
+.btn-edit {
   position: fixed;
-  top: 6.8rem;
-  left: 300px;
+  top: 8rem;
+  left: 67rem;
+}
+
+.btn-delete {
+  position: fixed;
+  top: 11rem;
+  left: 67rem;
+}
+
+.btn-up {
+  position: fixed;
+  top: 50rem;
+  left: 98rem;
 }
 
 .btn {
-  opacity: 0.8;
+  opacity: 0.7;
+}
+
+.btn-primary {
+  width: 55px;
+  height: 55px;
+}
+
+/* --------------- profile --------------- */
+
+.profile-img {
+  width: 100px;
+  height: 100px;
 }
 
 /* --------------- border --------------- */
@@ -56,7 +80,7 @@ footer {
 }
 
 .boundary {
-  margin: 100px 0 40px 0;
+  margin: 40px 0;
   opacity: 0.7;
 }
 
@@ -74,7 +98,7 @@ footer {
   border: 1px solid #419fec;
 }
 
-/* --------------- color --------------- */
+/* --------------- rounded --------------- */
 
 .rb-top {
   border-radius: 3px 3px 0 0;
@@ -84,12 +108,38 @@ footer {
   border-radius: 3px;
 }
 
-.g-blue {
-  background: linear-gradient(to right, rgb(156, 176, 219), #fff);
-}
-
 /* --------------- color --------------- */
+
 .bg-wblue {
   background-color: #4d77ad;
 }
 
+/* --------------- icon --------------- */
+
+.fa-angle-double-up {
+  font-size: 30px;
+}
+
+.sns-content {
+  height: 55px;
+}
+
+.twitter {
+  background: #6ac3ff;
+  height: 35px;
+  width: 35px;
+}
+
+.facebook {
+  background: #1b50ff;
+  height: 35px;
+  width: 35px;
+}
+
+.fa-twitter {
+  font-size: 20px;
+}
+
+.fa-facebook-f {
+  font-size: 20px;
+}
