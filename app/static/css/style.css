@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-flow: column;
   min-height: 100vh;
-  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'RocknRoll One', sans-serif;
 }
 
 main {
@@ -26,21 +26,52 @@ main {
   font-size: 28px;
 }
 
-.card {
-  width: 9vw;
-  height: 11vw;
-}
-
-.card-img {
-  width: 9vw;
-  height: 11vw;
-}
-
 footer {
   font-family: 'Lobster Two', cursive;
   height: 6vh;
   color: #ffffff;
   background-color: #4d77ad;
+}
+
+/* --------------- button --------------- */
+
+.btns {
+  position: fixed;
+  top: 6.8rem;
+  left: 300px;
+}
+
+.btn {
+  opacity: 0.8;
+}
+
+/* --------------- border --------------- */
+
+.hr {
+  position: relative;
+  left: -5px; 
+  border: 1px double #419fec;
+  width: 170px;
+  opacity: 0.2;
+}
+
+.boundary {
+  margin: 100px 0 40px 0;
+  opacity: 0.7;
+}
+
+/* --------------- title --------------- */
+
+.title {
+  position: relative;
+  top: 28px;
+  color: #419fec;
+  opacity: 0.2;
+}
+
+.hr-title {
+  margin: 0 250px;
+  border: 1px solid #419fec;
 }
 
 /* --------------- color --------------- */
@@ -53,8 +84,12 @@ footer {
   border-radius: 3px;
 }
 
+.g-blue {
+  background: linear-gradient(to right, rgb(156, 176, 219), #fff);
+}
+
 /* --------------- color --------------- */
-.w-blue {
+.bg-wblue {
   background-color: #4d77ad;
 }
 
