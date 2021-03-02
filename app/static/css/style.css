@@ -9,28 +9,55 @@ body {
   display: flex;
   flex-flow: column;
   min-height: 100vh;
-  font-family: 'RocknRoll One', sans-serif;
 }
 
 main {
   flex: 1;
 }
 
-.navbar {
-  font-family: 'Lobster Two', cursive;
-  background-color: #4d77ad;
+/* ------- header ------- */
+header {
+  text-align: center;
+  background-color:#0077B6;
 }
+
+.header-center {
+  line-height: 60px;
+}
+
+/* ------- footer ------- */
+footer {
+  text-align: center;
+  background-color:#0077B6;
+}
+
+.footer-center {
+  line-height: 50px;
+}
+
+
+
+
+
+
+
 
 .navbar-brand {
   color: #ffffff;
   font-size: 28px;
 }
 
-footer {
-  font-family: 'Lobster Two', cursive;
-  height: 6vh;
-  color: #ffffff;
-  background-color: #4d77ad;
+/* --------------- form --------------- */
+
+.form {
+  height: 790px;
+}
+
+.form-btn {
+  position: fixed;
+  top: 100px;
+  width: 10px;
+  opacity: 0.2;
 }
 
 /* --------------- button --------------- */
@@ -57,7 +84,7 @@ footer {
   opacity: 0.7;
 }
 
-.btn-primary {
+.uppage-btn {
   width: 55px;
   height: 55px;
 }
