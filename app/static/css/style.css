@@ -16,13 +16,9 @@ main {
 }
 
 /* ------- header ------- */
-header {
-  text-align: center;
-  background-color:#0077B6;
-}
 
-.header-center {
-  line-height: 60px;
+.navbar {
+  line-height: 90px;
 }
 
 /* ------- footer ------- */
@@ -36,110 +32,30 @@ footer {
 }
 
 
-
-
-
-
-
-
-.navbar-brand {
-  color: #ffffff;
-  font-size: 28px;
-}
-
 /* --------------- form --------------- */
 
-.form {
-  height: 790px;
-}
-
-.form-btn {
-  position: fixed;
-  top: 100px;
-  width: 10px;
-  opacity: 0.2;
-}
 
 /* --------------- button --------------- */
 
-.btn-edit {
-  position: fixed;
-  top: 8rem;
-  left: 67rem;
-}
 
-.btn-delete {
-  position: fixed;
-  top: 11rem;
-  left: 67rem;
-}
-
-.btn-up {
-  position: fixed;
-  top: 50rem;
-  left: 98rem;
-}
-
-.btn {
-  opacity: 0.7;
-}
-
-.uppage-btn {
-  width: 55px;
-  height: 55px;
-}
 
 /* --------------- profile --------------- */
 
-.profile-img {
-  width: 100px;
-  height: 100px;
-}
+
 
 /* --------------- border --------------- */
 
-.hr {
-  position: relative;
-  left: -5px; 
-  border: 1px double #419fec;
-  width: 170px;
-  opacity: 0.2;
-}
 
-.boundary {
-  margin: 40px 0;
-  opacity: 0.7;
-}
 
 /* --------------- title --------------- */
 
-.title {
-  position: relative;
-  top: 28px;
-  color: #419fec;
-  opacity: 0.2;
-}
-
-.hr-title {
-  margin: 0 250px;
-  border: 1px solid #419fec;
-}
 
 /* --------------- rounded --------------- */
 
-.rb-top {
-  border-radius: 3px 3px 0 0;
-}
-
-.rb {
-  border-radius: 3px;
-}
 
 /* --------------- color --------------- */
 
-.bg-wblue {
-  background-color: #4d77ad;
-}
+
 
 /* --------------- icon --------------- */
 
