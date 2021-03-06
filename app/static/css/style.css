@@ -18,7 +18,11 @@ main {
 /* ------- header ------- */
 
 .navbar {
-  line-height: 90px;
+  line-height: 74px;
+}
+
+.nav-link {
+  font-size: 13px;
 }
 
 /* ------- footer ------- */
