@@ -15,77 +15,11 @@ main {
   flex: 1;
 }
 
-/* ------- header ------- */
-
-.navbar {
-  line-height: 74px;
+.nav {
+  position: fixed;
+  background-color: #134074;
 }
 
-.nav-link {
-  font-size: 13px;
-}
-
-/* ------- footer ------- */
-footer {
-  text-align: center;
-}
-
-.footer-center {
-  line-height: 55px;
-}
-
-
-/* --------------- form --------------- */
-
-
-/* --------------- button --------------- */
-
-
-
-/* --------------- profile --------------- */
-
-
-
-/* --------------- border --------------- */
-
-
-
-/* --------------- title --------------- */
-
-
-/* --------------- rounded --------------- */
-
-
-/* --------------- color --------------- */
-
-
-
-/* --------------- icon --------------- */
-
-.fa-angle-double-up {
-  font-size: 30px;
-}
-
-.sns-content {
-  height: 55px;
-}
-
-.twitter {
-  background: #6ac3ff;
-  height: 35px;
-  width: 35px;
-}
-
-.facebook {
-  background: #1b50ff;
-  height: 35px;
-  width: 35px;
-}
-
-.fa-twitter {
-  font-size: 20px;
-}
-
-.fa-facebook-f {
-  font-size: 20px;
+.main {
+  height: 1000px;
 }
