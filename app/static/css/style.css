@@ -14,18 +14,3 @@ body {
 main {
   flex: 1;
 }
-
-.nav {
-  position: fixed;
-  background-color: #1165c5;
-  height: 900px;
-}
-
-.icons {
-  height: 100px;
-  width: 100px;
-}
-
-.main {
-  height: 1000px;
-}
