@@ -17,7 +17,13 @@ main {
 
 .nav {
   position: fixed;
-  background-color: #134074;
+  background-color: #1165c5;
+  height: 900px;
+}
+
+.icons {
+  height: 100px;
+  width: 100px;
 }
 
 .main {
