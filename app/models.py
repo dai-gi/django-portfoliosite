@@ -4,11 +4,9 @@ from django.utils import timezone
 
 
 class Profile(models.Model):
-	author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+	title = models.TextField("本文")
 	image = models.ImageField(upload_to='profile', verbose_name='イメージ画像', null=True, blank=True)
 	content = models.TextField("本文")
-	career = models.TextField("経歴", blank=True, null=True)
-	programming_language = models.TextField("プログラミング言語", blank=True, null=True)
 	created = models.DateTimeField("作成日", default=timezone.now)
 
 	def __str__(self):
