@@ -15,5 +15,5 @@ class Profile(models.Model):
 	subimage = models.ImageField(upload_to='images', verbose_name='サブ画像')
 
 	def __str__(self):
-		return str(self.author)
+		return str(self.title)
         
